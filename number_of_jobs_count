@@ -30,3 +30,6 @@ def get_number_of_jobs_L(location):
     
     print(number_of_jobs)
     return location,number_of_jobs
+
+get_number_of_jobs_L('New York')
+get_number_of_jobs_T('Python')
