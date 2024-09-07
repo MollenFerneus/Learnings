@@ -91,7 +91,13 @@ print(get_number_of_jobs_D('Python'))
 
 
 
+#######################################################################################################
+
+#################################################   Conclusion ########################################
+
+#######################################################################################################
 
 
-
-
+#The second version doesn't include possible double words when taking one word input, resulting in ignoring some of the words. 
+#In this example the input is "Python", and some of the phrases in data contained "Python Developer" or "Ethernetpython", these cases were not counted.
+#On top of that, the for loop for each word in the list "seperate_skills" took much more memory and time to compute the result.
