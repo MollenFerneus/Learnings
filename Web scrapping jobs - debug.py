@@ -31,25 +31,25 @@ def get_number_of_jobs_T(technology):
 
 ########################################################################################
 
-# def get_number_of_jobs_S(technology):
-#     number_of_jobs = 0
-#     response = requests.get(api_url)
-#     if response.ok:             
-#         data = response.json()
-#     for jobs in data:
+def get_number_of_jobs_S(technology):
+     number_of_jobs = 0
+     response = requests.get(api_url)
+     if response.ok:             
+         data = response.json()
+     for jobs in data:
         
-#         skills = jobs.get('Key Skills')   
-#         #print("skills = ", skills)
-#         seperate_skills = re.split(r"[|,.-]", skills)       #splits the words, using the symbols between them. This way it doesn't split words like "digital margeting"
-#         #print("seperate skills = ",seperate_skills)            
-#         for skill in seperate_skills:                           #splits the list into seperate words
-#             cleaned_skill = skill.strip(",.|- ").lower()            #Strips the words from characters around them and make them lower case
-#             #print("cleaned skill = ", cleaned_skill)
-#             if technology.lower() == cleaned_skill:                 #makes the input lower case and compares it to each word from the skill list
-#                 #print(cleaned_skill, "=", technology)
-#                 number_of_jobs = number_of_jobs + 1
+         skills = jobs.get('Key Skills')   
+         #print("skills = ", skills)
+         seperate_skills = re.split(r"[|,.-]", skills)       #splits the words, using the symbols between them. This way it doesn't split words like "digital margeting"
+         #print("seperate skills = ",seperate_skills)            
+         for skill in seperate_skills:                           #splits the list into seperate words
+             cleaned_skill = skill.strip(",.|- ").lower()            #Strips the words from characters around them and make them lower case
+             #print("cleaned skill = ", cleaned_skill)
+             if technology.lower() == cleaned_skill:                 #makes the input lower case and compares it to each word from the skill list
+                 #print(cleaned_skill, "=", technology)
+                 number_of_jobs = number_of_jobs + 1
     
-#     return number_of_jobs
+     return number_of_jobs
 
 
 
