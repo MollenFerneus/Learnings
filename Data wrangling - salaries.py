@@ -1,7 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv(r"C:/Users/osgou/Programming/Courser_IBM_Projects/Web Scrapping/m1_survey_data(2).csv")
-
+df = pd.read_csv(r"C:/Users/XXXXXXX/m1_survey_data.csv")     #dataframe from link: https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DA0321EN-SkillsNetwork/LargeData/m1_survey_data.cs
 
 print(df["CompFreq"].unique())                  #prints unique values from column "CompFreq"
 
